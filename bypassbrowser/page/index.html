@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <title>Bypass Browser</title>
     <script>
       function getParams() {
       var idx = document.URL.indexOf('?');
@@ -18,6 +20,7 @@
   </head>
   <body>
     <iframe id="frame" src="http://mishandle.cf" title="Bypass Browser">
+    </iframe>
     <script>
       document.getElementById('frame').src=decodeURI(params["url"]);
     </script>
