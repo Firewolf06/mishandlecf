@@ -19,7 +19,7 @@
   <body>
     <iframe id="frame" src="http://mishandle.cf" title="Bypass Browser">
     <script>
-      document.getElementById('frame').src=unescape(params["url"]);
+      document.getElementById('frame').src=decodeURI(params["url"]);
     </script>
   </body>
 </html>
